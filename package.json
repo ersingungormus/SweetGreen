@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/"
+    "test": "mocha tests/",
+    "precommit": "pretty-quick --staged"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +15,8 @@
     "chromedriver": "^2.37.0",
     "mocha": "^5.1.0",
     "selenium-webdriver": "^4.0.0-alpha.1"
+  },
+  "devDependencies": {
+    "prettier": "1.12.1"
   }
 }

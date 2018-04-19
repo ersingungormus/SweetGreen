@@ -22,12 +22,12 @@ describe('Main Page', function(){
 
 describe('ButtonLogo', function(){
 
-		it('Clicking on logo should navigate to main page', function(done){
+		it('Clicking on logo should navigate to main page', async function(){
 				driver.findElement(webdriver.By.xpath("//*[@id='root']/div/div/div/div/div[1]/a")).click()												
 				//driver.getPageSource().contains("Sign in to get all the tools")
-				String Url = driver.getCurrentUrl();
-				Assert.assertEquals(Url, "https://team.sweetgreen.com/login );			
-	        .then(done);
+				var Url = await driver.getCurrentUrl();
+
+				assert.equal(Url, "https://team.sweetgreen.com/login");
 	    })
 		
         });
