@@ -1,0 +1,18 @@
+{
+  "name": "mocha-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "chromedriver": "^2.37.0",
+    "mocha": "^5.1.0",
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  }
+}
