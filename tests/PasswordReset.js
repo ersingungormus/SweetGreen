@@ -16,7 +16,7 @@ describe('Password Reset', function(){
 
 	
 		it('It should navigate to reset page', function (done){
-		driver.get('https://team.sweetgreen.com/')
+		driver.get('https://team-staging.sweetgreen.com/')
 		driver.findElement(webdriver.By.xpath("//*[contains(text(), 'Click here')]")).click()
 		.then(done);
 
@@ -29,10 +29,11 @@ describe('Password Reset', function(){
 		it('Clicking on logo should navigate to main page', async function(){
 				driver.findElement(webdriver.By.xpath("//*[@id='root']/div/div/div/div/div[1]/a")).click()								
 				var Url = await driver.getCurrentUrl();
-				assert.equal(Url, "https://team.sweetgreen.com/login");
+				assert.equal(Url, "https://team-staging.sweetgreen.com/login");
 	    })
 		
         });
+
 
 
 after(function quitWebdriver(done){
