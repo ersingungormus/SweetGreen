@@ -27,9 +27,12 @@ describe('Password Reset', function(){
 		describe('ButtonLogo', function(){
 
 		it('Clicking on logo should navigate to main page', async function(){
-				driver.findElement(webdriver.By.xpath("//*[@id='root']/div/div/div/div/div[1]/a")).click()								
-				var Url = await driver.getCurrentUrl();
-				assert.equal(Url, "https://team-staging.sweetgreen.com/login");
+			 //var expect = require('chai').expect
+			 driver.findElement(webdriver.By.xpath("//*[@id='root']/div/div/div/div/div[1]/a")).click()								
+			 var Url = await driver.getCurrentUrl()			 
+			 assert.equal(Url, "https://team-staging.sweetgreen.com/login")
+			 //expect(Url).to.equal("https://team-staging.sweetgreen.com/login")
+		
 	    })
 		
         });
